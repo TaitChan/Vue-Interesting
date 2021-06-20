@@ -1,0 +1,64 @@
+{
+  "name": "ct-vue3-mini",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "new": "plop"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "clipboard": "^2.0.6",
+    "core-js": "^3.6.5",
+    "element-plus": "^1.0.2-beta.48",
+    "js-cookie": "^3.0.0-rc.1",
+    "mockjs": "^1.1.0",
+    "nprogress": "0.2.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "chokidar": "^3.5.1",
+    "eslint": "^7.18.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.5.0",
+    "lint-staged": "^10.5.3",
+    "node-sass": "^4.14.1",
+    "plop": "2.3.0",
+    "prettier": "^2.2.1",
+    "sass-loader": "^10.2.0",
+    "sass-node": "^4.11.2",
+    "sass-resources-loader": "^2.2.2",
+    "stylelint": "^13.9.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recess-order": "^2.3.0",
+    "svg-sprite-loader": "^5.2.1"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

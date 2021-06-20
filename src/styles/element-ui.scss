@@ -1,0 +1,30 @@
+// cover some element-ui styles
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+  .el-dialog__body {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.el-table__header-wrapper {
+  th {
+    //background-color: #eef1f6;
+    background-color: #fafbfc;
+    color: #606266;
+  }
+}
+
+.el-popper.is-light {
+  background-color: transparent !important;
+  border: 0 !important;
+  .el-menu--vertical > .el-menu.el-menu--popup {
+    padding: 0;
+    border-radius: $menu-fold-select-box-border;
+  }
+}

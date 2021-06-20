@@ -1,0 +1,44 @@
+//element-ui有主题色定制 https://element-plus.gitee.io/#/zh-CN/component/custom-theme
+
+/**这里是学习css的草稿。如何优化?**/
+//HSLA颜色
+//H:色调。0/360表示红色，120表示绿色，240表示蓝色。取值为：0 - 360
+//S:饱和度。取值为:0.0% - 100.0%
+//L:亮度。取值为:0.0% - 100.0%
+//A: 透明度。取值为:0 - 1
+
+$menu-theme-color-h: 160;
+$menu-theme-color-s: 80%;
+$menu-theme-color-l: 40%;
+$menu-theme-color-a: 1;
+
+$menu-theme-color: hsla(
+  $menu-theme-color-h,
+  $menu-theme-color-s,
+  $menu-theme-color-l,
+  $menu-theme-color-a
+);
+$menu-theme-color-light-low: hsla(
+  $menu-theme-color-h,
+  $menu-theme-color-s,
+  $menu-theme-color-l + 40,
+  $menu-theme-color-a
+);
+$menu-theme-color-light-high: hsla(
+  $menu-theme-color-h,
+  $menu-theme-color-s,
+  $menu-theme-color-l + 20,
+  $menu-theme-color-a
+);
+$menu-theme-color-dark-low: hsla(
+  $menu-theme-color-h,
+  $menu-theme-color-s,
+  $menu-theme-color-l - 20,
+  $menu-theme-color-a
+);
+$menu-theme-color-dark-high: hsla(
+  $menu-theme-color-h,
+  $menu-theme-color-s,
+  $menu-theme-color-l - 30,
+  $menu-theme-color-a
+);
