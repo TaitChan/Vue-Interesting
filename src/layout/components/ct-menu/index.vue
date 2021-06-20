@@ -91,7 +91,7 @@
     background-color: $menu-select-bg !important;
   }
   @mixin menu-unselect-color() {
-    color: $menu-unselect-color!important;
+    color: $menu-unselect-color !important;
     i {
       color: $menu-unselect-color !important;
     }

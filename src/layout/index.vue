@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-container>
+    <el-container style="height: 100vh">
       <el-aside
         class="ct-aside"
         :class="isCollapse ? 'ct-aside-fold' : 'ct-aside-unfold'"
@@ -21,12 +21,12 @@
           </ct-header>
         </el-header>
         <el-main style="background: #f0f2f5">
-          <ct-tags></ct-tags>
+          <!--          <ct-tags></ct-tags>-->
           <ct-main></ct-main>
         </el-main>
-        <el-footer>
-          <ct-footer></ct-footer>
-        </el-footer>
+<!--        <el-footer>-->
+<!--          <ct-footer></ct-footer>-->
+<!--        </el-footer>-->
       </el-container>
     </el-container>
   </div>
